@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio modern web developer." />
+
+  <title>Portofolio Modern</title>
+
+  <link rel="stylesheet" href="../navbar/style.css" />
+</head>
+
+<body>
+
+<form>
+
+  <label for="nama" >Nama:</label>
+  <input type="text" id="nama" name="nama" placeholder="Tulis nama kamu" required>
+  <label for="email" >Email:</label>
+  <input type="email" id= "email" name="email" placeholder="email@contoh.com">
+  <label for="password" >Password:</label>
+  <input type="password" id="password" name="password">
+  <p><strong>Jenis Kelamin:</strong></p> <!-- Simple text label -->
+  <input type="radio" id="pria" name="gender" value="laki-laki"> 
+  <label for="pria">Laki-laki</label>
+  <input type="radio" id="wanita" name="gender" value="perempuan">
+  <label for="wanita">Perempuan</label>
+  <p>Hobi:</p>
+  <input type="checkbox" id="baca" name="hobi" value="membaca">
+  <label for="baca">Membaca</label>
+    <input type="checkbox" id="olahraga" name="hobi" value="olahraga">
+        <label for="olahraga">Olahraga</label>
+    <p><label for="kota">Kota:</label></p>
+    <select id="kota" name="kota">
+    <option value="">-- Pilih Kota --</option>
+    <option value="jakarta">Jakarta</option>
+    <option value="bandung">Bandung</option>
+    <option value="surabaya">Surabaya</option>
+    </select>
+    <label for="usia" >Usia:</label>
+  <input type="number" id="usia" name="usia" min="0" max="120"step="5" >
+     <label for="tanggal_lahir" >Tanggal Lahir:</label>
+  <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+
+    <label for="foto" >Foto 3x2 :</label>
+  <input type="file" id="foto" name="foto" accept=".jpg,.png,.pdf" >
+
+
+<label for="fav-color">Warna Favorit Anda:</label>
+<input type="color" id="fav-color" name="favorite_color">
+
+<label>Total Bayar:</label>
+<input type="number" value="150000" disabled>
+<!-- ❌ Tidak dikirim ke server (system calculate) -->
+
+<!-- BAYAR (readonly setelah hitung) -->
+<label>Jumlah Bayar:</label>
+<input type="number" name="jumlah_bayar" value="150000" readonly>
+<!-- ✅ Dikirim: jumlah_bayar=150000 -->
+
+<button type="reset">Hapus</button>
+<button type="submit">Daftar</button>
+</form>
+</body>
+</html>
