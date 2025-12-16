@@ -14,19 +14,6 @@ body {
     padding: 20px;
 }
 
-/* NAVBAR */
-.navbar {
-  background: #ffffff;
-  padding: 15px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  border-bottom: 1px solid #ddd;
-  z-index: 100;
-}
-
 /* Header */
 header {
     text-align: center;
@@ -260,4 +247,5 @@ footer {
         padding: 15px;
     }
 }
+
 
